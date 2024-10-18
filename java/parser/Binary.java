@@ -5,7 +5,7 @@ public class Binary implements ASTNode {
   public final ASTNode right;
   public final BinaryOp op;
 
-  public Boolean(ASTNode left, BinaryOp op, ASTNode right) {
+  public Binary(ASTNode left, BinaryOp op, ASTNode right) {
     this.left = left;
     this.right = right;
     this.op = op;

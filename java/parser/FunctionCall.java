@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FunctionCall implements ASTNode {
-  public final String functionName;
+  public final BasicFunction functionName;
   public final List<ASTNode> args;
 
-  public Name(String name, List<ASTNode> args) {
-    this.name = name;
+  public FunctionCall(BasicFunction name, List<ASTNode> args) {
+    this.functionName = name;
     this.args = args;
   }
 
@@ -17,7 +17,7 @@ public class FunctionCall implements ASTNode {
   }
 
   public String toString() {
-    return this.name + "(" + args.stream().map(a -> a.toString()).collect(Collectors.joining(", ")) + ")";
+    return this.functionName + "(" + args.stream().map(a -> a.toString()).collect(Collectors.joining(", ")) + ")";
   }
 }
 

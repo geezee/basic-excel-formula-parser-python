@@ -14,6 +14,6 @@ public class Cell implements ASTNode {
   }
 
   public String toString() {
-    return this.column + this.col;
+    return this.column + this.row;
   }
 }

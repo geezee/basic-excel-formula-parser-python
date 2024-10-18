@@ -12,6 +12,6 @@ public class Boolean implements ASTNode {
   }
 
   public String toString() {
-    return this.value.toString();
+    return "" + this.value;
   }
 }
